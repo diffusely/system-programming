@@ -8,7 +8,7 @@ int main()
 
     while(1) {
         sem_wait(&chat->s_read);
-        printf("Other: %s\n", chat->message);
+        printf("Message: %s\n", chat->message);
         sem_post(&chat->s_write);
     }
 

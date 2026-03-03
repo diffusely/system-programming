@@ -1,11 +1,11 @@
 A minimal inter-process communication (IPC) chat application using **POSIX shared memory** and **semaphores** in C.
 
-## 📖 Overview
+Overview
 
 SharedChat demonstrates how two processes can communicate in real-time using:
 One process writes messages, the other reads them — simple and elegant!
 
-## 🔧 Build
+Build
 
 ```bash
 make
@@ -18,9 +18,9 @@ To clean up:
 make clean
 ```
 
-## 🚀 Usage
+Usage
 
-> ⚠️ **Important:** Always run the **writer first!** It initializes the shared memory and semaphores.
+**Important:** Always run the **writer first!** It initializes the shared memory and semaphores.
 
 ### Terminal 1 — Start the Writer
 ```bash
